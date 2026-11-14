@@ -1,4 +1,4 @@
-﻿# LEADO — Agentic AI Lead Generation and Personalized Outreach System
+# LEADO — Agentic AI Lead Generation and Personalized Outreach System
 
 <p align="center">
   <strong>Get Your Lead by Today</strong>
@@ -297,8 +297,6 @@ Install Nodemon for development:
 ```bash
 npm install -D nodemon
 ```
-
-
 Generate a random JWT secret:
 
 ```bash
@@ -331,7 +329,7 @@ Check databases:
 show dbs
 ```
 
-### 6.5 Create the Administrator Account
+### 6.7 Create the Administrator Account
 
 After configuring `.env` and connecting MongoDB:
 
@@ -742,4 +740,112 @@ The project will be developed incrementally.
 - [ ] Store discovered leads.
 - [ ] Implement duplicate lead detection.
 - [ ] Add search and filtering.
--
+- [ ] Implement lead ownership.
+
+### Phase 5: Agentic AI Integration
+
+- [ ] Integrate an LLM API.
+- [ ] Design the AI agent workflow.
+- [ ] Implement research and qualification steps.
+- [ ] Implement lead scoring.
+- [ ] Generate personalized email drafts.
+- [ ] Add AI output validation and error handling.
+
+### Phase 6: Email Outreach
+
+- [ ] Configure Nodemailer and SMTP.
+- [ ] Implement email draft management.
+- [ ] Implement user approval workflow.
+- [ ] Send approved emails.
+- [ ] Track sending status.
+- [ ] Store outreach history.
+
+### Phase 7: Analytics and Administration
+
+- [ ] Implement dashboard statistics.
+- [ ] Add campaign performance reports.
+- [ ] Implement CSV export.
+- [ ] Build administrator user management.
+- [ ] Add system activity monitoring.
+- [ ] Add integration management.
+- [ ] Implement audit logging.
+
+### Phase 8: Final Testing and Deployment
+
+- [ ] Complete backend API testing.
+- [ ] Complete frontend testing.
+- [ ] Test role-based security.
+- [ ] Test database operations.
+- [ ] Test AI workflow.
+- [ ] Test email approval and sending.
+- [ ] Fix bugs and improve performance.
+- [ ] Prepare deployment configuration.
+- [ ] Deploy the application.
+
+---
+
+## 14. Development Commands
+
+Run these commands from the `backend` directory.
+
+| Command | Purpose |
+|---|---|
+| `npm install` | Install dependencies |
+| `npm run dev` | Start development server |
+| `npm start` | Start production server |
+| `npm run create-admin` | Create administrator account |
+
+### Important URLs
+
+| Resource | URL |
+|---|---|
+| LEADO Frontend | http://localhost:5000/ |
+| Backend Health | http://localhost:5000/api/health |
+| Registration API | http://localhost:5000/api/auth/register |
+| Login API | http://localhost:5000/api/auth/login |
+| Current User API | http://localhost:5000/api/auth/me |
+
+---
+
+## 15. Current Development Status
+
+**Project:** LEADO — Agentic AI Lead Generation and Personalized Outreach System
+
+**Current focus:** Backend development and role-based authentication.
+
+**Implemented so far:**
+
+- Express backend foundation.
+- MongoDB and Mongoose configuration.
+- User authentication model.
+- Registration and login APIs.
+- Password hashing.
+- JWT authentication middleware.
+- Role-based authorization middleware.
+- Administrator creation script.
+- Browser-based login and registration interface.
+- Separate user and administrator login modes.
+- Separate role-based dashboards.
+- API permission testing interface.
+
+**Next development priority:**
+
+Complete local MongoDB connectivity and test the full authentication workflow. After authentication is verified, move to the React frontend and campaign management module.
+
+---
+
+## 16. Author and Repository
+
+**Project Name:** LEADO
+
+**Project Type:** Agentic AI Lead Generation and Personalized Outreach System
+
+**Development Approach:** Backend-first, followed by frontend integration and AI workflow development.
+
+**GitHub Repository:**
+
+https://github.com/samiaaktererin/Leado-Lead_Generation_website
+
+---
+
+*LEADO — Get Your Lead by Today.*
