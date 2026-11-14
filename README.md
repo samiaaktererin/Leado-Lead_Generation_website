@@ -329,7 +329,7 @@ Check databases:
 show dbs
 ```
 
-### 6.7 Create the Administrator Account
+### 6.5 Create the Administrator Account
 
 After configuring `.env` and connecting MongoDB:
 
