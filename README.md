@@ -298,31 +298,6 @@ Install Nodemon for development:
 npm install -D nodemon
 ```
 
-### 6.4 Environment Configuration
-
-Create a `.env` file inside the backend directory.
-
-```env
-PORT=5000
-
-MONGO_URI=mongodb://127.0.0.1:27017/leado
-
-JWT_SECRET=your_long_random_secret
-JWT_EXPIRES_IN=1d
-
-CLIENT_URL=http://localhost:5173
-
-ADMIN_NAME=LEADO Administrator
-ADMIN_EMAIL=admin@leado.com
-ADMIN_PASSWORD=YourStrongAdminPassword123!
-```
-
-**Important:**
-
-- Replace the JWT secret with a long, randomly generated secret.
-- Replace the administrator password with a strong private password.
-- Never upload `.env` to GitHub.
-- For MongoDB Atlas, replace the local MongoDB URI with your Atlas connection string.
 
 Generate a random JWT secret:
 
@@ -330,7 +305,7 @@ Generate a random JWT secret:
 node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 ```
 
-### 6.5 Start MongoDB
+### 6.4 Start MongoDB
 
 For a local Windows installation, open PowerShell as Administrator:
 
@@ -356,7 +331,7 @@ Check databases:
 show dbs
 ```
 
-### 6.6 Create the Administrator Account
+### 6.5 Create the Administrator Account
 
 After configuring `.env` and connecting MongoDB:
 
@@ -366,7 +341,7 @@ npm run create-admin
 
 This script creates the administrator account using the credentials defined in `.env`.
 
-### 6.7 Start the Backend
+### 6.6 Start the Backend
 
 Development mode:
 
